@@ -311,5 +311,4 @@ Proje, gerçek dünyada çalışan bir uygulamanın modern teknolojilerle yenide
 
 ---
 
-**Hazırlayan:** Kubilay Kaan  
 **Tarih:** 6 Nisan 2026
