@@ -197,13 +197,13 @@ export default function BusinessCard({ business, compact = false }) {
               <Chip
                 icon={<PhoneIcon sx={{ fontSize: 16 }} />}
                 label="ARA"
-                size="small"
                 clickable
                 onClick={() => setCallOpen(true)}
                 sx={{
                   backgroundColor: isOpen ? '#458cb9' : '#6babd3',
                   color: '#fff',
                   fontWeight: 700,
+                  padding: 2,
                   '&:hover': { backgroundColor: '#2d6a8e' },
                   '& .MuiChip-icon': { color: '#fff' },
                 }}
@@ -212,16 +212,16 @@ export default function BusinessCard({ business, compact = false }) {
             <Chip
               icon={<MapIcon sx={{ fontSize: 16 }} />}
               label="HARİTA"
-              size="small"
               clickable
               onClick={() => setMapOpen(true)}
-              variant="outlined"
               sx={{
+                backgroundColor: '#d6a64c',
                 borderColor: '#d6a64c',
-                color: '#d6a64c',
+                color: '#fff',
+                padding: 2,
                 fontWeight: 700,
-                '&:hover': { backgroundColor: 'rgba(214,166,76,0.1)' },
-                '& .MuiChip-icon': { color: '#d6a64c' },
+                '&:hover': { backgroundColor: '#c49540' },
+                '& .MuiChip-icon': { color: '#fff' },
               }}
             />
           </Box>
