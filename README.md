@@ -122,8 +122,7 @@ OfRehberiREACT/
     │   ├── Top10Page.jsx         # En İyi 10 Yer sayfası
     │   ├── BusinessDetailPage.jsx # Firma detay sayfası
     │   └── ContactPage.jsx       # Bize Ulaşın / İletişim sayfası
-    ├── data/
-    │   └── mockData.js           # Tüm mock veriler (firmalar, kategoriler vb.)
+    ├── api/                      # Axios servisleri (backend REST API çağrıları)
     └── utils/
         └── businessUtils.js      # Yardımcı fonksiyonlar (açık/kapalı hesaplama)
 ```
@@ -221,16 +220,10 @@ React Router DOM v7 ile SPA yönlendirme:
 | `/bize-ulasin` | ContactPage | İletişim sayfası |
 | `/company/:slug` | BusinessDetailPage | Firma detay (ör. `/company/pide-house-of`) |
 
-### Mock Veri Yapısı
+### Veri Kaynağı
 
-Gerçek veritabanı yerine `src/data/mockData.js` dosyasında mock veriler kullanılmıştır:
-
-- **15 kategori** (Yemek, Cafe, Alışveriş, vb.)
-- **6 kategoride alt kategoriler** (toplam 25+ alt kategori)
-- **12 mahalle** (Bölümlü, Cumhuriyet, Kaban, vb.)
-- **12 firma** (detaylı bilgilerle: adres, telefon, saat, puan, yorum)
-- **13 yorum** (bazılarında firma yanıtları)
-- **7 keşfet etiketi**
+Frontend verileri `src/api` altındaki Axios servisleriyle Spring Boot backend API üzerinden alır.
+Firma, kategori, mahalle, yorum, kullanıcı paneli ve admin işlemleri veritabanı bağlantılı REST endpointleriyle çalışır.
 
 ### ScrollToTop
 

@@ -1,8 +1,20 @@
 # dependencies
 node_modules/
+SourceCode/frontend/node_modules/
+SourceCode/backend/firebase-admin/node_modules/
+SourceCode/backend/.m2/
 
 # production build
 dist/
+SourceCode/frontend/dist/
+
+# Java / Maven build output
+target/
+SourceCode/backend/target/
+*.class
+*.jar
+*.war
+*.ear
 
 # environment variables
 .env
@@ -10,6 +22,15 @@ dist/
 .env.development.local
 .env.test.local
 .env.production.local
+SourceCode/frontend/.env
+SourceCode/frontend/.env.local
+SourceCode/frontend/.env.development.local
+SourceCode/frontend/.env.test.local
+SourceCode/frontend/.env.production.local
+
+# Firebase service account keys
+SourceCode/backend/firebase-admin/*.json
+!SourceCode/backend/firebase-admin/*.example.json
 
 # editor
 .vscode/*
